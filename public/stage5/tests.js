@@ -180,9 +180,11 @@ describe('ステージ5（意図通りに非同期処理を利用できる）', 
       }
 
       /**
-       * 平たい配列をもつ promise を返す。
-       * @param {Array<Thenable<T>|T>}
-       * @return {Thenable<Array<T>>}
+       * 配列または配列をもつ promise を展開し、平たい配列をもつ promise を
+       * 返す。
+       * @param {Array<Thenable<T>|T>} arrayOfPromisedArray promise または、
+       *     オブジェクトの配列。
+       * @return {Thenable<Array<T>>} 平たい配列をもつ promise。
        * @template T
        */
       function flatMap(arrayOfPromisedArray) {
@@ -198,8 +200,9 @@ describe('ステージ5（意図通りに非同期処理を利用できる）', 
       }
 
       /**
-       * 配列を結合する関数を返す。
-       * @param {Array<T>} arrayA
+       * 配列を結合する関数を返す。この関数の実行前に、結合する配列の片方を
+       * 指定する必要がある。
+       * @param {Array<T>} arrayA 関数の実行前に指定する、結合したい配列。
        * @return {function(Array<T>): Array<T>} arrayA と arrayB を結合する関数。
        * @template T
        */
