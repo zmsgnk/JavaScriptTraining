@@ -109,8 +109,8 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       // console.log(element.childNodes[0]);
       //
       // なにやら文字列？らしきものが入っています（element.childNodes[0].constructor.name
-      // で調べるとわかりますが Text クラスのインスタンスです）。
-      // つまり、基準となる要素にはこの Text インスタンスを指定できそうです！
+      // で調べるとわかりますが Text オブジェクトです）。
+      // つまり、基準となる要素にはこの Text オブジェクトを指定できそうです！
       //
       // なお、element.childNodes[0] は element.firstChild は同じ意味です。
       element.insertBefore(elementToAdd, element.firstChild);
