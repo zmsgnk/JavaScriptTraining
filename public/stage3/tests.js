@@ -44,7 +44,7 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       var ghosts = element.querySelectorAll('.mediumseagreen-ghosts');
       var ghost;
 
-      // 残念なことに、querySelectorAll の返す値は配列ではないため、
+      // 残念なことに、querySelectorAll の返すオブジェクトは配列ではないため、
       // Array#forEach が使えません。代わりに、for ループを使っています。
       for (var idx = 0, len = ghosts.length; idx < len; idx++) {
         ghost = ghosts[idx];
@@ -92,7 +92,7 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       // ここに記述してください。
       var element = document.querySelector('blockquote');
 
-      // Node#appendChild は要素の最後に追加されてしまうので、特定の要素の前に
+      // Node#appendChild だと要素の最後に追加されてしまうので、特定の要素の前に
       // 要素を追加する Node#insertBefore メソッドを使います。
       //
       // ここではまるのは、insertBefore には、追加する要素と基準となる要素の2つを

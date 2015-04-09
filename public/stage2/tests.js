@@ -39,7 +39,7 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
         return Array(num + 1).join(str);
 
         // ちなみに、上の書き方でなぜ文字列繰り返しになるのか、不思議だと
-        // 思いませんか？余裕があれば、どうして下の書き方がうまくいくのか
+        // 思いませんか？余裕があれば、どうしてこの書き方でうまくいくのか
         // 考えてみてください！
       }
       element.textContent = repeat(element.textContent, 2);
@@ -86,7 +86,7 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       // 変更した DOM 要素は element 変数に代入してください。
       var element = document.getElementsByClassName('turquoise')[0];
 
-      // HTMLElement#style#opacity によって、要素の不透明度をを指定することが
+      // HTMLElement#style#opacity によって、要素の不透明度を指定することが
       // できます。
       element.style.opacity = 0.5;
 
