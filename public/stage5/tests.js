@@ -296,9 +296,10 @@ describe('ステージ5（意図通りに非同期処理を利用できる）', 
       }
 
       /**
-       * 指定された言語でもっともスターが多いプロダクトを返す。
+       * 指定された言語でもっともスターが多いリポジトリ名を返す。
        * @param {string} lang 言語名。
-       * @return {Thenable<string>}
+       * @return {Thenable<string>} もっともスター数が多いリポジトリ名をもつ
+       *     promise。
        */
       function searchMostPoluarRepoByLanguage(lang) {
         var queryString = buildQueryString({
