@@ -94,7 +94,8 @@ describe('ステージ5（意図通りに非同期処理を利用できる）', 
       });
 
 
-      return expect(promisedFriends).to.eventually.deep.equal(['PYXC-PJ']);
+      return expect(promisedFriends).to.eventually.have.length(1)
+        .and.have.members(['PYXC-PJ']);
     });
 
 
@@ -109,9 +110,8 @@ describe('ステージ5（意図通りに非同期処理を利用できる）', 
         });
 
 
-      return expect(promisedFriends).to.eventually.deep.equal(
-        ['jisp', 'TeJaS']
-      );
+      return expect(promisedFriends).to.eventually.have.length(2)
+        .and.have.members(['jisp', 'TeJaS']);
     });
 
 
@@ -157,7 +157,8 @@ describe('ステージ5（意図通りに非同期処理を利用できる）', 
         });
 
 
-      return expect(promisedFriends).to.eventually.deep.equal(['TypeScript']);
+      return expect(promisedFriends).to.eventually.have.length(1)
+        .and.have.members(['TypeScript']);
     });
 
 
@@ -317,7 +318,8 @@ describe('ステージ5（意図通りに非同期処理を利用できる）', 
         languages.map(searchMostPoluarRepoByLanguage));
 
 
-      return expect(mostPopularRepos).to.eventually.have.length(2);
+      return expect(mostPopularRepos).to.eventually.have.length(2)
+        .and.satisfy(function(name) { return typeof name === 'string'; });
 
       // Github API に関する参考情報
       // https://developer.github.com/v3/search
