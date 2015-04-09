@@ -189,7 +189,7 @@ describe('あなたの闇のJS力', function() {
 
     it('true == 10 の振る舞いがわかる', function() {
       expect(true == 10)
-        .to.equal(/* ここに値を書き込んでください */);
+        .to.equal(false);
     });
 
 
