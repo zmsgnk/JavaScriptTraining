@@ -133,7 +133,7 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       // 使う方法を使ってください。
       var element = document.querySelector('[data-js-training="blueviolet"]');
 
-      // top プリパティの指定は、数値ではないので注意が必要です。
+      // top プロパティの指定は、数値ではないので注意が必要です。
       element.style.top = '-20px';
 
       // しかし、上の top 指定だけだと、要素が動いてくれません！
