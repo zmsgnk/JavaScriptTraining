@@ -551,6 +551,16 @@ CSS セレクタについては、[MDN のCSS リファレンス](https://develo
 
 
 
+#### クリアできたら
+
+Lint をかけてみましょう。
+
+    gulp lint-stage1
+
+警告があれば、修正してみてください。
+
+
+
 ### ステージ2
 
 DOM 要素の属性・テキストを変更する  
@@ -634,6 +644,16 @@ HTML/JavaScript/CSS 分業の基本です。
 修正してください。
 
 [http://localhost:8000/stage2/](http://localhost:8000/stage2/)
+
+
+
+#### クリアできたら
+
+Lint をかけてみましょう。
+
+    gulp lint-stage2
+
+警告があれば、修正してみてください。
 
 
 
@@ -723,6 +743,16 @@ DOM 構造の操作が重要なのです。
 修正してください。
 
 [http://localhost:8000/stage3/](http://localhost:8000/stage3/)
+
+
+
+#### クリアできたら
+
+Lint をかけてみましょう。
+
+    gulp lint-stage3
+
+警告があれば、修正してみてください。
 
 
 
@@ -922,6 +952,16 @@ button.addEventListener('click', function(event) {
 
 
 
+#### クリアできたら
+
+Lint をかけてみましょう。
+
+    gulp lint-stage4
+
+警告があれば、修正してみてください。
+
+
+
 ### ステージ5
 
 非同期処理のトレーニング
@@ -974,7 +1014,7 @@ console.log(2);
 JavaScript にはサーバーと非同期に通信するための  
 API が用意されています。
 
-- [fetch API](http://www.hcn.zaq.ne.jp/___/WEB/Fetch-ja.html)
+- [Fetch API](http://www.hcn.zaq.ne.jp/___/WEB/Fetch-ja.html)
 
 	現在策定中の新しい標準仕様
 
@@ -986,14 +1026,14 @@ API が用意されています。
 
 
 今回は、JavaScript の将来を見据えて、  
-fetch API によるサーバーとの通信を  
+Fetch API によるサーバーとの通信を  
 トレーニングします。
 
 
 
-#### fetch API
+#### Fetch API
 
-fetch API は下のように書きます。  
+Fetch API は下のように書きます。  
 このコードは、`/users.json` を  
 取得します。
 
@@ -1124,8 +1164,18 @@ fetch('/api/foo')
 
 - [Promise に関する参考情報](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [Promise 参考情報（重量級）](http://azu.github.io/promises-book/)
-- [fetch API に関する参考情報](https://github.com/github/fetch)
+- [Fetch API に関する参考情報](https://github.com/github/fetch)
 - [Github API に関する参考情報](https://developer.github.com/v3/)
+
+
+
+#### クリアできたら
+
+Lint をかけてみましょう。
+
+    gulp lint-stage5
+
+警告があれば、修正してみてください。
 
 
 
@@ -1392,6 +1442,16 @@ y でレジストリへの公開ができないように設定します。
 
 
 
+#### クリアできたら
+
+Lint をかけてみましょう。
+
+    gulp lint-stage6
+
+警告があれば、修正してみてください。
+
+
+
 ### ステージ7
 
 よくあるイディオムを読むトレーニング
@@ -1421,6 +1481,16 @@ y でレジストリへの公開ができないように設定します。
 修正してください。
 
 [http://localhost:8000/stage7/](http://localhost:8000/stage7/)
+
+
+
+#### クリアできたら
+
+Lint をかけてみましょう。
+
+    gulp lint-stage7
+
+警告があれば、修正してみてください。
 
 
 
